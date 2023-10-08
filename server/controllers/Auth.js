@@ -9,7 +9,10 @@ export const register = async (req, res) => {
             userName,
             email,
             password,
-            posts
+            gender,
+            age,
+            height,
+            weight
         } = req.body;   //extract data from User Input
         // console.log(req.body);
         const user = await User.findOne({ email: email });
@@ -28,7 +31,10 @@ export const register = async (req, res) => {
                     userName,
                     email,
                     password: passwordHash,
-                    posts
+                    gender,
+                    age,
+                    height,
+                    weight
                 }
             );
             const savedUser = await newUser.save(); //Save the new User

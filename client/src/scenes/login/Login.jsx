@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";  //To change route
 import "./login.css";
 import URL from "../../URL";
 
-function Login() {
+function Login({setLoggedUser}) {
     const navigate = useNavigate();
 
     const [user, setUser] = useState({
@@ -39,7 +39,7 @@ function Login() {
                     } else if (res.data.invalidCredentials === true) {
                         alert("Invalid Credentials!");
                     } else {
-                        alert("Login Success");
+                        setLoggedUser(res.data.user);
                     }
                 }
                 )
