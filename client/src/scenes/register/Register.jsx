@@ -32,8 +32,9 @@ function Register() {
     //To take user to register page
     const registerUser = async () => {
         const { userName, email, password, gender, age, height, weight } = user;
+        // console.log(user)
         //Checking if input is valid or Not
-        if (userName && email && password && gender && age && weight && height) {
+        if (userName && email && password && gender && age && height && weight) {
             const response = await axios.post(`${URL || "http://localhost:3000"}/auth/register`, user, {
                 method: "POST",
                 headers: {
@@ -64,20 +65,20 @@ function Register() {
                 <h1 id="RegTitle">The Daily Scribble!</h1>
                 <div className="RegisterPage-inputs">
                     <h2 id="signUp">Sign Up</h2>
-                    <input id="RegInputs" type="username" name="userName" value={user.userName} placeholder="Username" onChange={handleChange} />
-                    <input id="RegInputs" type="email" name="email" value={user.email} placeholder="Email Id" onChange={handleChange} />
-                    <input id="RegInputs" type="password" name="password" value={user.password} placeholder="Password" onChange={handleChange} />
-                    <label>
-                        <p>Gender</p>
-                        <select name="gender" defaultValue={user.gender} onChange={handleChange}>
+                    <input id="userName" type="username" name="userName" value={user.userName} placeholder="Username" onChange={handleChange} />
+                    <input id="email" type="email" name="email" value={user.email} placeholder="Email Id" onChange={handleChange} />
+                    <input id="password" type="password" name="password" value={user.password} placeholder="Password" onChange={handleChange} />
+                    <label id="gender">
+                        <select id="gender-box" name="gender" value={user.gender} onChange={handleChange}>
+                            <option value="">--Gender--</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                             <option value="Others">Others</option>
                         </select>
                     </label>
-                    <input type="number" name="age" value={user.age} min={1} max={150} placeholder="Age" onChange={handleChange}/>
-                    <input type="number" name="weight" value={user.weight} min={20} max={150} placeholder="Weight int kgs" onChange={handleChange}/>
-                    <input type="number" name="height" value={user.height} placeholder="Height in Meters" onChange={handleChange}/>
+                    <input id="age" type="number" name="age" min={1} max={150} value={user.age} placeholder="Age" onChange={handleChange} />
+                    <input id="height" type="number" name="height" min={0} max={5} step={0.01} value={user.height} placeholder="Height in meters" onChange={handleChange} />
+                    <input id="weight" type="number" name="weight" min={0} max={200} step={0.1} value={user.weight} placeholder="Weight in Kgs" onChange={handleChange} />
                     <button id="RegBtn" type="submit" onClick={registerUser}>Sign Up</button>
                     <p id="RegOr">Or</p>
                     <button id="RegBtn" type="submit" onClick={() => { navigate("/") }}>Already Have an Account?</button>
