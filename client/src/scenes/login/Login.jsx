@@ -57,8 +57,8 @@ function Login({setLoggedUser}) {
                 <h1 id="loginTitle">The Daily Scribble!</h1>
                 <div className="LoginPage-inputs">
                     <h2 id="signIn">Sign in</h2>
-                    <input id="LoginInputs" autoComplete="on" type="email" name="email" value={user.email} placeholder="Email" onChange={handleChange} />
-                    <input id="LoginInputs" autoComplete="on" type="password" name="password" value={user.password} placeholder="Password" onChange={handleChange} />
+                    <input id="email" autoComplete="on" type="email" name="email" value={user.email} placeholder="Email" onChange={handleChange} />
+                    <input id="password" autoComplete="on" type="password" name="password" value={user.password} placeholder="Password" onChange={handleChange} />
                     <button id="loginBtn" type="submit" onClick={loginUser}>Sign in</button>
                     <p id="logOr">Or</p>
                     <button id="loginBtn" type="button" onClick={() => { navigate("/auth") }}>New Account?</button>

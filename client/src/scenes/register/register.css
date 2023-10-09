@@ -1,0 +1,27 @@
+.RegisterPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.RegisterPage-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.RegisterPage-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.userDetails{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
