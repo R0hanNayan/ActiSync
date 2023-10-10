@@ -59,14 +59,10 @@ function Register() {
 
     return (
         <div className="RegisterPage">
-            <div className="RegisterPage-left">
-                <img id="regImg" src="/assets/regImg.jpg" alt="Register" />
-                <button id="RegBtn" type="submit" onClick={() => { navigate("/") }}>Already Have an Account?</button>
-            </div>
             <div className="RegisterPage-Container">
-                <h1 id="RegTitle">ActiSync</h1>
+                <h1 id="RegTitle">Welcome to ActiSync</h1>
                 <div className="RegisterPage-inputs">
-                    <h2 id="signUp">Register</h2>
+                    <h2 id="signUp">Sign Up</h2>
                     <input id="userName" type="username" name="userName" value={user.userName} placeholder="Username" onChange={handleChange} />
                     <input id="email" type="email" name="email" value={user.email} placeholder="Email Id" onChange={handleChange} />
                     <input id="password" type="password" name="password" value={user.password} placeholder="Password" onChange={handleChange} />
@@ -83,8 +79,12 @@ function Register() {
                         <input id="height" type="number" name="height" min={0} max={5} step={0.01} value={user.height} placeholder="Height in meters" onChange={handleChange} />
                         <input id="weight" type="number" name="weight" min={0} max={200} step={0.1} value={user.weight} placeholder="Weight in Kgs" onChange={handleChange} />
                     </div>
-                    <button id="RegBtn" type="submit" onClick={registerUser}>Sign Up</button>
+                    <button id="RegBtn1" type="submit" onClick={registerUser}>Sign Up</button>
+                    <button id="RegBtn2" type="submit" onClick={() => { navigate("/") }}>Already Have an Account?</button>
                 </div>
+            </div>
+            <div className="RegisterPage-left">
+                <img id="regImg" src="/assets/regImg.jpg" alt="Register" />
             </div>
         </div>
     )

@@ -1,49 +1,119 @@
-.RegisterPage{
+.RegisterPage {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 8rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background: #F8F8F8;
 }
 
-.RegisterPage-left{
+#RegTitle{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: -0.5rem;
+    color: #636364;
+}
+
+#signUp{
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
+}
+
+.RegisterPage-left {
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
-    width: 50%; 
+    width: 50%;
 }
 
-#regImg{
-    max-height: 27rem;
-    max-width: 100%;
+#regImg {
+    height: 40rem;
+    object-fit: fill;
+    border-radius: 0px 10px 10px 0px;
 }
 
-.RegisterPage-Container{
+.RegisterPage-Container {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid black; */
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-.RegisterPage-inputs{
+.RegisterPage-inputs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 2rem;
+    row-gap: 1rem;
 }
 
-.userDetails{
+#userName,
+#email,
+#password {
+    width: 19.62294rem;
+    height: 2.58194rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: rgba(196, 196, 196, 0.00);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#age,
+#gender,
+#height,
+#weight {
+    width: 9.42294rem;
+    height: 2.58194rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: rgba(196, 196, 196, 0.00);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#gender-box {
+    width: 9.42294rem;
+    height: 2.58194rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: rgba(196, 196, 196, 0.00);
+}
+
+.userDetails {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     column-gap: 0.5rem;
     row-gap: 2rem;
+}
+
+#RegBtn1 {
+    outline: none;
+    border: none;
+    width: 19.62294rem;
+    height: 2.58194rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    background: #EA454C;
+    box-shadow: 0px 4px 10px 0px rgba(233, 68, 75, 0.25);
+    color: #636364;
+}
+
+#RegBtn2 {
+    width: 19.62294rem;
+    height: 2.58194rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: rgba(234, 69, 76, 0.00);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    color: #636364;
 }
