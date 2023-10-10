@@ -59,8 +59,12 @@ function Register() {
 
     return (
         <div className="RegisterPage">
+            <div className="RegisterPage-left">
+                <img id="regImg" src="/assets/regImg.jpg" alt="Register" />
+                <button id="RegBtn" type="submit" onClick={() => { navigate("/") }}>Already Have an Account?</button>
+            </div>
             <div className="RegisterPage-Container">
-                <h1 id="RegTitle">The Daily Scribble!</h1>
+                <h1 id="RegTitle">ActiSync</h1>
                 <div className="RegisterPage-inputs">
                     <h2 id="signUp">Register</h2>
                     <input id="userName" type="username" name="userName" value={user.userName} placeholder="Username" onChange={handleChange} />
@@ -80,8 +84,6 @@ function Register() {
                         <input id="weight" type="number" name="weight" min={0} max={200} step={0.1} value={user.weight} placeholder="Weight in Kgs" onChange={handleChange} />
                     </div>
                     <button id="RegBtn" type="submit" onClick={registerUser}>Sign Up</button>
-                    <p id="RegOr">Or</p>
-                    <button id="RegBtn" type="submit" onClick={() => { navigate("/") }}>Already Have an Account?</button>
                 </div>
             </div>
         </div>

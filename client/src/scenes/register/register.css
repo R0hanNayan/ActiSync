@@ -1,16 +1,36 @@
 .RegisterPage{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 8rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.RegisterPage-left{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 50%; 
+}
+
+#regImg{
+    max-height: 27rem;
+    max-width: 100%;
 }
 
 .RegisterPage-Container{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid black; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .RegisterPage-inputs{
