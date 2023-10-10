@@ -1,14 +1,23 @@
+.Register{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to LEFT, #434343 0%, black 100%);
+}
+
 .RegisterPage {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     border-radius: 10px;
-    margin-top: 5rem;
+    margin-top: 3.3rem;
     margin-left: 10rem;
     margin-right: 10rem;
     background: #F8F8F8;
+    box-shadow: 0px 4px 15px 10px rgba(232, 229, 229, 0.25);
 }
 
 #RegTitle{
@@ -24,16 +33,14 @@
     color: #636364;
 }
 
-.RegisterPage-left {
+.RegisterPage-Right {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
     width: 50%;
 }
 
 #regImg {
     height: 40rem;
-    object-fit: fill;
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -64,6 +71,10 @@
     border: 1px solid rgba(0, 0, 0, 0.25);
     background: rgba(196, 196, 196, 0.00);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
 }
 
 #age,
@@ -77,6 +88,10 @@
     border: 1px solid rgba(0, 0, 0, 0.25);
     background: rgba(196, 196, 196, 0.00);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
 }
 
 #gender-box {
@@ -86,6 +101,10 @@
     border-radius: 0.75rem;
     border: 1px solid rgba(0, 0, 0, 0.25);
     background: rgba(196, 196, 196, 0.00);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
 }
 
 .userDetails {
@@ -104,7 +123,11 @@
     border-radius: 0.75rem;
     background: #EA454C;
     box-shadow: 0px 4px 10px 0px rgba(233, 68, 75, 0.25);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
     color: #636364;
+    font-weight: 500;
 }
 
 #RegBtn2 {
@@ -115,5 +138,15 @@
     border: 1px solid rgba(0, 0, 0, 0.25);
     background: rgba(234, 69, 76, 0.00);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
     color: #636364;
+    font-weight: 500;
+}
+
+#RegBtn1:hover, #RegBtn2:hover{
+    font-size: 1.2rem;
+    width: 20.62294rem;
+    height: 3.58194rem;
 }
