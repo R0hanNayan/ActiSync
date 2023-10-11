@@ -4,7 +4,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to LEFT, #434343 0%, black 100%);
+    background-image: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
 }
 
 .RegisterPage {
@@ -149,4 +149,64 @@
     font-size: 1.2rem;
     width: 19.72294rem;
     height: 2.78194rem;
+}
+
+@media screen and (max-width:1024px) {
+    .RegisterPage {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        background: #F8F8F8;
+        box-shadow: 0px 4px 15px 10px rgba(232, 229, 229, 0.25);
+    }
+    #regImg {
+        height: 36rem;
+    }
+    .RegisterPage-Container {
+        margin-bottom: 0.5rem;
+    }
+    .RegisterPage-inputs {
+        row-gap: 0.7rem;
+    }
+    .userDetails {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 0.5rem;
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .RegisterPage {
+        margin-top: 15rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #regImg {
+        height: 40rem;
+    }
+    .RegisterPage-inputs {
+        row-gap: 1rem;
+    }
+    .userDetails {
+        row-gap: 2rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .RegisterPage {
+        margin-top: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .RegisterPage-Container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #RegTitle{
+        font-size: 1.5rem;
+    }
+    .RegisterPage-Right{
+        display: none;
+    }
 }
