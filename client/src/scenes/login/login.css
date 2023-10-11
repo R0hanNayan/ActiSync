@@ -96,3 +96,52 @@
     width: 19.72294rem;
     height: 2.78194rem;
 }
+
+
+@media screen and (max-width:1024px) {
+    .LoginPage {
+        margin-top: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        background: #F8F8F8;
+        box-shadow: 0px 4px 15px 10px rgba(232, 229, 229, 0.25);
+    }
+    #regImg {
+        height: 36rem;
+    }
+    .leftHalf {
+        margin-bottom: 0.5rem;
+    }
+    .LoginPage-inputs {
+        row-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .LoginPage {
+        margin-top: 15rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #regImg {
+        height: 40rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .LoginPage {
+        margin-top: 8rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .leftHalf {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    #loginTitle{
+        font-size: 1.5rem;
+    }
+    .rightHalf{
+        display: none;
+    }
+}
