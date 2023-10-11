@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [user, setLoggedUser] = useState(null); 
-  // console.log(user);
+  console.log(user);
   return (
     <div className="App">
       <Router>

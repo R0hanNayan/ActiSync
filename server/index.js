@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from "cors";
 import dotenv from "dotenv";
 import authRoutes from "./routes/Auth.js";
+import planRoutes from "./routes/WorkoutPlan.js";
 import mongoose from 'mongoose';
 import { register } from './controllers/Auth.js';
 const app = express();
@@ -24,6 +25,7 @@ app.post("/auth/register", register);
 
 //Routes
 app.use("/auth", authRoutes);
+app.use("/workoutPlan", planRoutes);
 
 
 app.listen(process.env.PORT, ()=>{
