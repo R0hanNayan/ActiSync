@@ -6,27 +6,26 @@ const WorkoutSchema = new mongoose.Schema({
         required: true,
         min: 6,
         max: 50,
-        unique: true
     },
-    exercise: {
-        day : {
-            type: Date,
-            required: true
-        },
-        exerciseType : {
-            type: String,
-            required: true
-        },
-        sets : {
-            type: Number,
-            required: true,
-            min: 0
-        },
-        reps: {
-            type: Number,
-            required: true,
-            min: 0
-        }
+    day : {
+        type: Date,
+        required: true
+    },
+    exerciseType : {
+        type: String,
+        required: true
+    },
+    sets : {
+        type: Number,
+        min: 0
+    },
+    reps: {
+        type: Number,
+        min: 0
+    },
+    duration: {
+        type: Number,
+        min: 0
     }
     }, {timestamps: true}
 );

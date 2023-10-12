@@ -14,7 +14,7 @@ function App() {
           <Route 
             path='/' 
             element={
-              user ? <Homepage setLoggedUser={setLoggedUser}/> : <Login setLoggedUser={setLoggedUser} />
+              user ? <Homepage setLoggedUser={setLoggedUser} user={user}/> : <Login setLoggedUser={setLoggedUser} />
             }
           />
           <Route exact path='/auth' element={<Register />} />

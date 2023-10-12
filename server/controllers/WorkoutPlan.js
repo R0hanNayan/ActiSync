@@ -5,20 +5,29 @@ export const WorkoutPlan = async (req, res) => {
     try{
         const {
             userName,
-            exercise
+            day, 
+            exerciseType, 
+            sets, 
+            reps, 
+            duration
         } = req.body;
 
-        const user = await User.findOne({userName : userName});
+        const user = await User.findOne({userName: userName});
         
-        if(user){
+        if(userName){
             const newWorkout = new Workout(
                 {
                     userName,
-                    exercise
+                    day, 
+                    exerciseType, 
+                    sets, 
+                    reps, 
+                    duration
                 }
             )
             const savedWorkout = await newWorkout.save();
-            res.status(201).json(savedWorkout);
+            console.log(savedWorkout);
+            res.send({savedWorkout: savedWorkout});
         }else{
             console.log("User Does not exists!");
         }
