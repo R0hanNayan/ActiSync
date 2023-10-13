@@ -1,0 +1,143 @@
+.WorkoutPlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(150deg, #7C6DD7 4.71%, #C4BAFF 110.44%), linear-gradient(132deg, #FF4C01 3.51%, #FDC9B3 99.4%, rgba(255, 76, 1, 0.12) 101.96%);
+    backdrop-filter: blur(21.20192527770996px);
+    padding: 2rem;
+    width: 25rem;
+    margin: 0 auto;
+}
+
+#exerciseType{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
+    padding: 1rem 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 2.35575rem;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 25rem;
+}
+
+.type-1{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+#sets{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2.35575rem;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#reps{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2.35575rem;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#duration{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 2.35575rem;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    width: 25rem;
+}
+
+#WoroutPlan-or{   
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    color: #1E293B;
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+#WoroutPlan-Save{
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+    background: #F97316;
+    border: none;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px 0px rgba(16, 16, 16, 0.25);
+}
+
+#WoroutPlan-Save:hover{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:1024px) {
+    .WorkoutPlan{
+        width: 20rem;
+    }
+    #exerciseType{
+        width: 20rem;
+    }
+    #sets{
+        width: 50%;
+    }
+    #reps{
+        width: 50%;
+    }
+    #duration{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .WorkoutPlan{
+        width: 15rem;
+    }
+    #exerciseType{
+        width: 15rem;
+    }
+    #sets{
+        width: 50%;
+    }
+    #reps{
+        width: 50%;
+    }
+    #duration{
+        width: 15rem;
+    }
+}
+@media screen and (max-width: 600px) {
+}

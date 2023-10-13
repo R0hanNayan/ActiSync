@@ -10,9 +10,9 @@ function WorkoutPlan({user}){
             userName: user.userName,
             day: date,
             exerciseType: "",
-            sets: 0,
-            reps: 0,
-            duration: 0
+            sets: null,
+            reps: null,
+            duration: null
         }
     )
 
@@ -46,13 +46,20 @@ function WorkoutPlan({user}){
         }
     }
     return(
-        <div>
+        <div className="WorkoutPlan">
             {/* <input id="date" type="date" name="day" value={workout.day} placeholder="Day" onChange={handleChange} /> */}
-            <input id="exerciseType" type="text" name="exerciseType" value={workout.exerciseType} placeholder="Exercise Type" onChange={handleChange} />
-            <input id="sets" type="Number" name="sets" value={workout.sets} placeholder="Sets" onChange={handleChange} />
-            <input id="reps" type="Number" name="reps" value={workout.reps} placeholder="Reps" onChange={handleChange} />
-            <input id="duration" type="Number" name="duration" value={workout.duration} placeholder="Duration" onChange={handleChange} />
-            <button type="submit" onClick={saveWorkout}>Save!</button>
+            <div className="exercise-Type">
+                <input id="exerciseType" type="text" name="exerciseType" value={workout.exerciseType} placeholder="Exercise Type" onChange={handleChange} />
+            </div>
+            <div className="type-1">
+                <input id="sets" type="Number" name="sets" value={workout.sets} placeholder="Sets" onChange={handleChange} />
+                <input id="reps" type="Number" name="reps" value={workout.reps} placeholder="Reps" onChange={handleChange} />
+            </div>
+            <p id="WoroutPlan-or">Or</p>
+            <div className="type-2">
+                <input id="duration" type="Number" name="duration" value={workout.duration} placeholder="Minutes" onChange={handleChange} />
+            </div>
+            <button id="WoroutPlan-Save" type="submit" onClick={saveWorkout}>Save!</button>
         </div>
     )
 }
