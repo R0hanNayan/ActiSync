@@ -35,3 +35,19 @@ export const WorkoutPlan = async (req, res) => {
         console.log(err);
     }
 }
+
+export const getUserWorkout = async(req, res) => {
+    try{
+        // console.log(req.params);
+        const {userName} = req.params;
+        const workouts = await Workout.find({userName : userName});
+        // console.log(post);
+        if(workouts){
+            res.send(workouts);
+        }else{
+            res.send({noWorkouts: true});  //Sending Boolean value to frontend if no posts found 
+        }
+    }catch(err){
+        console.log(err);
+    }
+}
