@@ -18,11 +18,11 @@
 
 #exerciseType{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: 'Rubik', sans-serif;
     color: #636364;
-    padding: 1rem 1.1rem;
+    padding: 1rem 1rem;
     outline: none;
     border: none;
     border-radius: 2.35575rem;
@@ -75,16 +75,6 @@
     background: #F5F5F5;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     width: 25rem;
-}
-
-#WoroutPlan-or{   
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-family: 'Rubik', sans-serif;
-    color: #fff;
-    margin-top: -0.5rem;
-    margin-bottom: -0.5rem;
 }
 
 #WoroutPlan-Save{
