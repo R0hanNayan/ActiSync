@@ -7,14 +7,14 @@ function WorkoutCard({workout}){
         <div className="WorkoutCard">
             {userWorkout.exerciseType === "Cardio" ? (
                 <div className="WorkoutCard-Container"> 
-                    <p>{userWorkout.exerciseType}</p>
-                    <p>{userWorkout.duration}</p>
+                    <p id="wc-et">{userWorkout.exerciseType}</p>
+                    <p id="wc-du">{userWorkout.duration}</p>
                 </div>
                 ) : (
-                    <div> 
-                        <p>{userWorkout.exerciseType}</p>
-                        <p>{userWorkout.sets}</p>
-                        <p>{userWorkout.reps}</p>
+                    <div className="WorkoutCard-Container"> 
+                        <p id="wc-et">{userWorkout.exerciseType}</p>
+                        <p id="wc-sets">{userWorkout.sets}</p>
+                        <p id="wc-reps">{userWorkout.reps}</p>
                     </div>
                 ) 
             }
