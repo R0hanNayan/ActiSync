@@ -28,9 +28,10 @@ function Workouts({user}){
         }
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-
+    
     return (
         <div className="Workouts">
+            <h1 id="w-head">Today's Workout</h1>
             <div className="Workouts-Container">
                 {
                     workouts.map(

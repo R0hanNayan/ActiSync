@@ -1,0 +1,24 @@
+.Workouts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 22.875rem;
+    max-height: 100%;
+    overflow: auto;
+}
+
+#w-head{
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    color: #636364;
+    font-weight: 500;
+}
+
+.Workouts-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
