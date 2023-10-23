@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './workoutCard.css';
 
 function WorkoutCard({workout}){
     const[userWorkout, setUserWorkout] = useState(workout);
@@ -7,14 +8,23 @@ function WorkoutCard({workout}){
         <div className="WorkoutCard">
             {userWorkout.exerciseType === "Cardio" ? (
                 <div className="WorkoutCard-Container"> 
-                    <p id="wc-et">{userWorkout.exerciseType}</p>
-                    <p id="wc-du">{userWorkout.duration}</p>
+                    <div className="wc-et-c">
+                        <p id="wc-et">{userWorkout.exerciseType}</p>
+                    </div>
+                    <div className="wc-dc">
+                        <p id="wc-du">{userWorkout.duration}</p>
+                    </div>
+                    
                 </div>
                 ) : (
                     <div className="WorkoutCard-Container"> 
-                        <p id="wc-et">{userWorkout.exerciseType}</p>
-                        <p id="wc-sets">{userWorkout.sets}</p>
-                        <p id="wc-reps">{userWorkout.reps}</p>
+                        <div className="wc-et-c">
+                            <p id="wc-et">{userWorkout.exerciseType}</p>
+                        </div>
+                        <div className="wc-dc">   
+                            <p id="wc-sets">{userWorkout.sets} Sets</p>
+                            <p id="wc-reps">{userWorkout.reps} Reps</p>
+                        </div>
                     </div>
                 ) 
             }
